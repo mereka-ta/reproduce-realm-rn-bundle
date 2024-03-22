@@ -1,0 +1,12 @@
+// prettier-ignore
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+    "noEmit": false,
+    "paths": {}
+  },
+  "exclude": ["node_modules", "**/__tests__/*"]
+}

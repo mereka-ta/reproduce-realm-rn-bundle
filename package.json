@@ -1,0 +1,21 @@
+{
+  "name": "reproduce-realm-rn-bundle",
+  "version": "0.0.1",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/*"
+    ]
+  },
+  "scripts": {
+    "pod": "cd packages/rn-0.70.15 && yarn pod-install-m1 && cd ../rn-0.71.0 && yarn pod-install-m1 && cd ../rn-0.73.6 && yarn pod-install-m1 && cd ../..",
+    "xcode70": "cd packages/rn-0.70.15 && yarn xcode && cd ../..",
+    "xcode71": "cd packages/rn-0.71.0 && yarn xcode && cd ../..",
+    "xcode73": "cd packages/rn-0.73.6 && yarn xcode && cd ../..",
+    "clear-nested-module": "cd packages/rn-shared && yarn && rm -rf node_modules && cd ../.. && yarn",
+    "bootstrap": "yarn clear-nested-module"
+  }
+}
