@@ -23,6 +23,8 @@ import {
   Header,
 } from 'react-native/Libraries/NewAppScreen';
 
+import {ButtonLoadBundle} from '@rn/shared';
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -89,6 +91,9 @@ function App(): React.JSX.Element {
             <View style={{minWidth: 320, padding: 10, backgroundColor: '#8d8d8d'}}>
               <Text style={{fontSize: 20, color: '#fff'}}>{JSON.stringify(jsVal, null, 2)}</Text>
             </View>
+          </Section>
+          <Section title="Load Other Bundle">
+            <ButtonLoadBundle />
           </Section>
         </View>
       </ScrollView>

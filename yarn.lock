@@ -2485,7 +2485,7 @@
     nullthrows "^1.1.1"
 
 "@rn/shared@file:packages/rn-shared":
-  version "0.0.1"
+  version "0.0.2"
 
 "@sideway/address@^4.1.5":
   version "4.1.5"
